@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CIS166AA Final Exam Project - Space">
+    <meta name="keywords" content="CIS166AA, space, galaxy, moon, planet">
+    <meta name="author" content="Alyssa Gephart">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="css/styles.css">
+        <!--all images are free to use, can be found here: https://www.freepik.com/collection?id=15425622 -->
+
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <a href="index.html"><img src="images/logo.png" alt="Logo-type smiling planet picture" id="logoImg"></a>
+            <a href="index.html">The Beauty of Space</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="planets.html">Planets</a></li>
+                <li><a href="galaxies.html">Galaxies</a></li>
+                <li><a href="moons.html">Moons</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="projects.html">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Site Quiz</h2>
+        </section>
+        <h3 style="width: 700px;">Hopefully you've learned some more about space and its bodies, because it's time for the quiz! The below questions are based on this site's content, and will validate your answers with JavaScript, displaying an alert once submitted.</h3>
+        <h3 style="width: 800px;">Read each question and select one of the multiple-choice responses to the best of your knowledge (or, you could also have the other pages open in different tabs ;) ).</h3>
+    
+        <form id="quiz"> <!--used ChatGPT to choose aria labels, was unsure if mine were suitable-->
+            <fieldset>
+                <legend>1. How many Gas Giant planets are there in our solar system?</legend>
+                <label><input type="radio" name="q1" value="4" aria-label="q1-label"> 4</label><br>
+                <label><input type="radio" name="q1" value="3" aria-label="q1-label"> 3</label><br>
+                <label><input type="radio" name="q1" value="2" aria-label="q1-label"> 2</label><br>
+                <label><input type="radio" name="q1" value="1" aria-label="q1-label"> 1</label><br>
+            </fieldset>
+            <fieldset>
+                <legend>2. Which of these are types of moons?</legend>
+                <label><input type="checkbox" name="q2" value="volcanic" aria-label="q2-label"> Volcanic</label><br>
+                <label><input type="checkbox" name="q2" value="rocky" aria-label="q2-label"> Rocky</label><br>
+                <label><input type="checkbox" name="q2" value="smooth" aria-label="q2-label"> Smooth</label><br>
+                <label><input type="checkbox" name="q2" value="icy" aria-label="q2-label"> Icy</label><br>
+            </fieldset>
+            <fieldset>
+                <legend>3. What type of galaxy is a cross between spiral and elliptical?</legend>
+                <label><input type="radio" name="q3" value="quasar" aria-label="q3-label"> Quasar</label><br>
+                <label><input type="radio" name="q3" value="active" aria-label="q3-label"> Active</label><br>
+                <label><input type="radio" name="q3" value="lenticular" aria-label="q3-label"> Lenticular</label><br>
+                <label><input type="radio" name="q3" value="seyfert" aria-label="q3-label"> Seyfert</label><br>
+            </fieldset>
+            <fieldset>
+                <legend>4. What type of planet is Pluto now classified as?</legend>
+                <label><input type="radio" name="q4" value="dwarf" aria-label="q4-label"> Dwarf</label><br>
+                <label><input type="radio" name="q4" value="rocky" aria-label="q4-label"> Rocky</label><br>
+                <label><input type="radio" name="q4" value="lost" aria-label="q4-label"> Lost</label><br>
+                <label><input type="radio" name="q4" value="irregular" aria-label="q4-label"> Irregular</label><br>
+            </fieldset>
+            <fieldset>
+                <legend>5. Moons can orbit backwards (opposite to their planet's orbit direction)</legend>
+                <label><input type="radio" name="q5" value="true" aria-label="q5-label"> True</label><br>
+                <label><input type="radio" name="q5" value="false" aria-label="q5-label"> False</label><br>
+            </fieldset>
+            <fieldset>
+                <legend>6. How can galaxies be categorized?</legend>
+                <label><input type="checkbox" name="q6" value="speed" aria-label="q6-label">By movement speed</label><br>
+                <label><input type="checkbox" name="q6" value="physical" aria-label="q6-label">By shape/physical features</label><br>
+                <label><input type="checkbox" name="q6" value="angle" aria-label="q6-label">By viewing angle</label><br>
+                <label><input type="checkbox" name="q6" value="distance" aria-label="q6-label">By distance from Earth</label><br>
+                <label><input type="checkbox" name="q6" value="activity" aria-label="q6-label">By their central activity</label><br>
+            </fieldset>
+            <button type="submit">Submit Answers</button>
+        </form>
+    </main>
+
+    <footer>
+        <address><strong>Alyssa Gephart &copy; 2026</strong></address>
+    </footer>
+    <script src="scripts/quiz.js"></script>
+</body>
+</html>

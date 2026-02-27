@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CIS166AA Final Exam Project - Space">
+    <meta name="keywords" content="CIS166AA, space, galaxy, moon, planet">
+    <meta name="author" content="Alyssa Gephart">
+    <title>Planets</title>
+    <link rel="stylesheet" href="css/styles.css">
+        <!--all images are free to use, can be found here: https://www.freepik.com/collection?id=15425622 -->
+
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <a href="index.html"><img src="images/logo.png" alt="Logo-type smiling planet picture" id="logoImg"></a>
+            <a href="index.html">The Beauty of Space</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="planets.html">Planets</a></li>
+                <li><a href="galaxies.html">Galaxies</a></li>
+                <li><a href="moons.html">Moons</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="projects.html">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>PLANETS</h2>
+        </section>
+        <h3 style="width:700px;">There are an unknown number of planets out there in outer space, but only 8 in our specific solar system. Technically, Pluto is now counted as a Dwarf Planet, along with Eris, Haumea, Makemake, and Ceres in the Solar System. There are also 4 Terrestrial (Rocky) Planets, 2 Gas Giants, and 2 Ice Giants.</h3>
+        <h3 style="width:600px;">Click the button below to learn some fun facts about our 8 planets. Can you guess which type each one is?</h3>
+        <button id="planetBtn">Click to get a planet!</button>
+        <img id="planetImg" src="#" alt="">
+        <h3 id="planetFact"></h3>
+        <h4 style="background-color: rgb(255, 197, 254); padding: 10px; border-radius: 20px;">Click each button to display an alert telling you which planets are each type:</h4>
+        <div id="planetBtns">
+            <button id="terrBtn">Terrestrial</button>
+            <button id="gasBtn">Gas Giants</button>
+            <button id="iceBtn">Ice Giants</button>
+        </div>
+        <!--used ChatGPT above to tell me what type of planet each was (wrote everything in my own words), and to learn how to separate certain words in the one h4 element-->
+    </main>
+
+    <footer>
+        <address><strong>Alyssa Gephart &copy; 2026</strong></address>
+    </footer>
+    <script src="scripts/planets.js"></script>
+</body>
+</html>

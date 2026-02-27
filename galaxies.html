@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CIS166AA Final Exam Project - Space">
+    <meta name="keywords" content="CIS166AA, space, galaxy, moon, planet">
+    <meta name="author" content="Alyssa Gephart">
+    <title>Galaxies</title>
+    <link rel="stylesheet" href="css/styles.css">
+        <!--all images are free to use, can be found here: https://www.freepik.com/collection?id=15425622 -->
+
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <a href="index.html"><img src="images/logo.png" alt="Logo-type smiling planet picture" id="logoImg"></a>
+            <a href="index.html">The Beauty of Space</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="planets.html">Planets</a></li>
+                <li><a href="galaxies.html">Galaxies</a></li>
+                <li><a href="moons.html">Moons</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="projects.html">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>GALAXIES</h2>
+        </section>
+        <h3 style="width: 700px;">Did you know that there are so many other galaxies than the one we live in? The Milky Way is pretty iconic, but there are so many others our telescoping technology has viewed before.</h3>
+        <h3 style="width: 600px;">They can be categorized based on their shapes and physical features, by their central activity (supermassive black hole!), or by the angle we must look at to observe them.</h3>
+        <label for="galaxyChoice">Choose a galaxy type from the dropdown to learn more about it. Click <a href="https://science.nasa.gov/universe/galaxies/types/">HERE</a> to learn more from NASA:</label>
+        <select id="galaxyChoice">
+            <option value="">Select a galaxy type here...</option>
+            <option value="spiral">Spiral</option>
+            <option value="elliptical">Elliptical</option>
+            <option value="lenticular">Lenticular</option>
+            <option value="irregular">Irregular</option>
+            <option value="active">Active</option>
+            <option value="seyfert">Seyfert</option>
+            <option value="quasar">Quasar</option>
+            <option value="blazar">Blazar</option>
+        </select>
+        <h3 id="galaxyInfo"></h3>
+        <section><img src="images/galaxy1.jpg" style="width: 500px;" alt="spiral galaxy"><img src="images/galaxy2.jpg" alt="rotated galaxy" style="width: 500px;"><img src="images/galaxy3.jpg" style="width: 500px;" alt="elliptical galaxy"></section>
+    </main>
+
+    <footer>
+        <address><strong>Alyssa Gephart &copy; 2026</strong></address>
+    </footer>
+    <script src="scripts/galaxies.js"></script>
+</body>
+</html>

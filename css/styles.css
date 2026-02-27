@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Science+Gothic:wght@100..900&display=swap');
+:root {
+    --primary-color: #cf1033;
+    --secondary-color: #f1f8ff;
+    --tertiary-color: rgb(57, 144, 231);
+    --background-color: #F5F7FA;
+    --text-color: #333333;
+    --body-font: 'Montserrat', sans-serif;
+    --header-font: 'Merriweather Sans', sans-serif;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+body {
+    font-family: var(--body-font);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url('../images/bg.jpg') no-repeat center center;
+    background-size: cover;
+}
+/*ChatGPT used to explain how to make the background image slightly transparent - below loads a white cover before the bg image to make it look semi-transparent*/
+main::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5); /* white with 50% opacity */
+    z-index: 0; /* behind the content */
+}
+main > * {
+    position: relative;
+    z-index: 1; /* content above overlay */
+}
+header, footer {
+    z-index: 1;
+}
+h2, h3, h4, h5, h6 {
+    font-family: var(--header-font);
+    text-align: center;
+}
+h2 {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+h3 {
+    text-align: center;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: var(--tertiary-color);
+    box-shadow: 2px 2px 5px black;
+    color: var(--secondary-color);
+}
+.highlight {
+    color: rgb(255, 197, 254);
+}
+#planetBtns button:hover {
+    background-color: var(--tertiary-color);
+    color: white;
+}
+#galaxyInfo {
+    background-color: rgb(255, 197, 254);
+    color: black;
+}
+#moonInfo {
+    background-color: rgb(255, 197, 254);
+    border-radius: 20px;
+    padding: 28px;
+    border: 1px solid black;
+    font-size: larger;
+}
+#moonType {
+    font-weight: bold;
+}
+#moonName {
+    font-size: larger;
+}
+legend {
+    font-size: larger;
+    background-color: rgb(59, 59, 59);
+    border-radius: 20px;
+    padding: 20px;
+    color: rgb(255, 197, 254);
+}
+form label {
+    display: block;
+}
+form label:hover {
+    background-color: rgb(255, 197, 254);
+    color: black;
+    cursor: pointer;
+}
+form {
+    background-color: darkgray;
+    padding: 20px;
+}
+form button:hover {
+    background-color: var(--tertiary-color);
+    color: white;
+    cursor: pointer;
+}
+section {
+    color: rgb(255, 197, 254);
+    margin: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-radius: 20px;
+    z-index: 1;
+    background-color: rgb(59, 59, 59);
+    border: 1px solid white;
+}
+
+button {
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    margin: 10px;
+}
+
+img:not(#logoImg) {
+    border-radius: 20px;
+    height: 503px;
+}
+#planetImg {
+    background-color: white;
+}
+#galaxyChoice {
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    margin: 10px;
+}
+label {
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
+    color: purple;
+    font-weight: bold;
+}
+
+header {
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    border: 1px solid #611d00;
+}
+header img {
+    border-radius: 50%;
+    width: 130px;
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--secondary-color);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px black;
+}
+.logo-container a {
+    font-family: var(--header-font);
+    font-size: 2.5rem;
+    text-decoration: none;
+    color: var(--text-color);
+}
+header nav {
+    float: right;
+}
+
+
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 5rem;
+    padding-right: 5rem;
+}
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1.2rem;
+    background-color: white;
+    border-radius: 40px;
+    border: 2px solid #611d00;
+    padding: 20px;
+}
+nav a:hover {
+    background-color: var(--tertiary-color);
+    color: var(--secondary-color);
+    border: 2px solid white;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
