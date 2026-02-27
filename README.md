@@ -10,3 +10,5 @@ I focused on implementing simplicity and cleanliness, using attractive/descripti
 
 For The Beauty of Space, I researched topics of planets, galaxies, moons, and double-checked facts using NASA's official website.
 This project provides just a small highlight of my knowledge of user-friendly navigation, dynamic and unique JavaScript processes, building site visitor intrigue, varied assortments of information, and WCAG standards.
+
+NOTE: Some viewers may have issues interacting with JavaScript elements due to their specific processing system/environment.
